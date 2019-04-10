@@ -1,42 +1,45 @@
 {
-  "name": "random-int",
-  "version": "1.0.0",
-  "description": "Generate a random integer",
-  "license": "MIT",
-  "repository": "sindresorhus/random-int",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "rand",
-    "random",
-    "randomize",
-    "int",
-    "integer",
-    "num",
-    "number",
-    "max",
-    "min",
-    "math",
-    "gen",
-    "generate",
-    "generator"
-  ],
-  "devDependencies": {
-    "ava": "*",
-    "in-range": "^1.0.0",
-    "number-is-integer": "^1.0.0",
-    "stable-fn": "^1.0.0"
-  }
+	"name": "random-int",
+	"version": "1.0.0",
+	"description": "Generate a random integer",
+	"license": "MIT",
+	"repository": "sindresorhus/random-int",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"rand",
+		"random",
+		"randomize",
+		"int",
+		"integer",
+		"num",
+		"number",
+		"max",
+		"min",
+		"math",
+		"gen",
+		"generate",
+		"generator"
+	],
+	"devDependencies": {
+		"ava": "^1.4.1",
+		"in-range": "^1.0.0",
+		"number-is-integer": "^1.0.1",
+		"stable-fn": "^1.0.0",
+		"tsd": "^0.7.2",
+		"xo": "^0.24.0"
+	}
 }

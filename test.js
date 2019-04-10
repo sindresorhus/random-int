@@ -2,27 +2,27 @@ import test from 'ava';
 import numberIsInteger from 'number-is-integer';
 import inRange from 'in-range';
 import stableFn from 'stable-fn';
-import fn from './';
+import randomInt from '.';
 
-function fn2(min, max) {
-	return stableFn(() => inRange(fn(min, max), min, max));
+function inRangeCheck(min, max) {
+	return stableFn(() => inRange(randomInt(min, max), min, max));
 }
 
-test(t => {
-	t.true(numberIsInteger(fn(0, 10)));
-	t.false(stableFn(() => fn(1)));
-	t.true(stableFn(() => inRange(fn(1), 0, 1)));
-	t.true(inRange(fn(1), 0, 1));
-	t.true(fn2(0, 1));
-	t.true(fn2(0, 2));
-	t.true(fn2(0, 10));
-	t.true(fn2(0, 100));
-	t.true(fn2(0, 0));
-	t.true(fn2(0, 1));
-	t.true(fn2(0, 2));
-	t.true(fn2(0, 10));
-	t.true(fn2(0, 100));
-	t.true(fn2(5, 10));
-	t.true(fn2(524234213, 99999999999));
-	t.true(fn2(-10, -5));
+test('main', t => {
+	t.true(numberIsInteger(randomInt(0, 10)));
+	t.false(stableFn(() => randomInt(1)));
+	t.true(stableFn(() => inRange(randomInt(1), 0, 1)));
+	t.true(inRange(randomInt(1), 0, 1));
+	t.true(inRangeCheck(0, 1));
+	t.true(inRangeCheck(0, 2));
+	t.true(inRangeCheck(0, 10));
+	t.true(inRangeCheck(0, 100));
+	t.true(inRangeCheck(0, 0));
+	t.true(inRangeCheck(0, 1));
+	t.true(inRangeCheck(0, 2));
+	t.true(inRangeCheck(0, 10));
+	t.true(inRangeCheck(0, 100));
+	t.true(inRangeCheck(5, 10));
+	t.true(inRangeCheck(524234213, 99999999999));
+	t.true(inRangeCheck(-10, -5));
 });

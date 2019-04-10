@@ -1,13 +1,15 @@
 'use strict';
-module.exports = function (min, max) {
-	if (max === undefined) {
-		max = min;
-		min = 0;
+module.exports = (minimumValue, maximumValue) => {
+	if (maximumValue === undefined) {
+		maximumValue = minimumValue;
+		minimumValue = 0;
 	}
 
-	if (typeof min !== 'number' || typeof max !== 'number') {
+	if (typeof minimumValue !== 'number' || typeof maximumValue !== 'number') {
 		throw new TypeError('Expected all arguments to be numbers');
 	}
 
-	return Math.floor(Math.random() * (max - min + 1) + min);
+	return Math.floor(
+		(Math.random() * (maximumValue - minimumValue + 1)) + minimumValue
+	);
 };

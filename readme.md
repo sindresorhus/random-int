@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install --save random-int
+$ npm install random-int
 ```
 
 
 ## Usage
 
 ```js
-var randomInt = require('random-int');
+const randomInt = require('random-int');
 
 randomInt(5);
 //=> 3
@@ -25,24 +25,24 @@ randomInt(10, 100);
 
 ## API
 
-### randomInt(max)
+### randomInt([maximumValue])
 
-Returns an integer from `0` to `max`.
+Returns an integer from `0` to `maximumValue`.
 
-### randomInt(min, max)
+### randomInt(minimumValue, maximumValue)
 
-Returns an integer from `min` to `max`.
+Returns an integer from `minimumValue` to `maximumValue`.
 
-#### min
+#### minimumValue
 
-Type: `number`  
+Type: `number`
 Default: `0`
 
 Minimum integer to return.
 
-#### max
+#### maximumValue
 
-Type: `number`  
+Type: `number`
 Default: `1`
 
 Maximum integer to return.
