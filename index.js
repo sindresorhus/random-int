@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = (minimumValue, maximumValue) => {
 	if (maximumValue === undefined) {
 		maximumValue = minimumValue;
