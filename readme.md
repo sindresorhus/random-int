@@ -25,22 +25,22 @@ randomInt(10, 100);
 
 ## API
 
-### randomInt([maximumValue])
+### randomInt([maximum])
 
-Returns an integer from `0` to `maximumValue`.
+Returns an integer from `0` to `maximum`.
 
-### randomInt(minimumValue, maximumValue)
+### randomInt(minimum, maximum)
 
-Returns an integer from `minimumValue` to `maximumValue`.
+Returns an integer from `minimum` to `maximum`.
 
-#### minimumValue
+#### minimum
 
 Type: `number`
 Default: `0`
 
 Minimum integer to return.
 
-#### maximumValue
+#### maximum
 
 Type: `number`
 Default: `1`

@@ -1,9 +1,9 @@
 /**
 Generate a random integer.
 
-@param minimumValue - Minimum integer to return. Default: `0`.
-@param maximumValue - Maximum integer to return. Default: `1`.
-@returns An integer from `minimumValue` to `maximumValue`.
+@param minimum - Minimum integer to return. Default: `0`.
+@param maximum - Maximum integer to return. Default: `1`.
+@returns An integer from `minimum` to `maximum`.
 
 @example
 ```
@@ -16,7 +16,7 @@ randomInt(10, 100);
 //=> 54
 ```
 */
-declare function randomInt(maximumValue?: number): number;
-declare function randomInt(minimumValue: number, maximumValue: number): number;
+declare function randomInt(maximum?: number): number;
+declare function randomInt(minimum: number, maximum: number): number;
 
 export = randomInt;
