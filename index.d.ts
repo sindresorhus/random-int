@@ -16,7 +16,6 @@ randomInt(10, 100);
 //=> 54
 ```
 */
-declare function randomInt(maximum?: number): number;
-declare function randomInt(minimum: number, maximum: number): number;
+declare function randomInt(minimum?: number, maximum?: number): number;
 
 export = randomInt;
