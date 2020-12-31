@@ -1,4 +1,4 @@
-# random-int [![Build Status](https://travis-ci.org/sindresorhus/random-int.svg?branch=master)](https://travis-ci.org/sindresorhus/random-int)
+# random-int
 
 > Generate a random integer
 
