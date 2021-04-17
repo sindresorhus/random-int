@@ -7,15 +7,13 @@ Generate a random integer.
 
 @example
 ```
-import randomInt = require('random-int');
+import randomInteger from 'random-int';
 
-randomInt(5);
+randomInteger(5);
 //=> 3
 
-randomInt(10, 100);
+randomInteger(10, 100);
 //=> 54
 ```
 */
-declare function randomInt(minimum?: number, maximum?: number): number;
-
-export = randomInt;
+export default function randomInteger(minimum?: number, maximum?: number): number;

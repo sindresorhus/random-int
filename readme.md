@@ -2,51 +2,47 @@
 
 > Generate a random integer
 
-
 ## Install
 
 ```
 $ npm install random-int
 ```
 
-
 ## Usage
 
 ```js
-const randomInt = require('random-int');
+import randomInteger from 'random-int';
 
-randomInt(5);
+randomInteger(5);
 //=> 3
 
-randomInt(10, 100);
+randomInteger(10, 100);
 //=> 54
 ```
 
-
 ## API
 
-### randomInt([maximum])
+### randomInteger(maximum?)
 
 Returns an integer from `0` to `maximum`.
 
-### randomInt(minimum, maximum)
+### randomInteger(minimum, maximum)
 
 Returns an integer from `minimum` to `maximum`.
 
 #### minimum
 
-Type: `number`<br>
+Type: `number`\
 Default: `0`
 
 Minimum integer to return.
 
 #### maximum
 
-Type: `number`<br>
+Type: `number`\
 Default: `1`
 
 Maximum integer to return.
-
 
 ## Related
 
@@ -57,8 +53,3 @@ Maximum integer to return.
 - [unique-random](https://github.com/sindresorhus/unique-random) - Generate random numbers that are consecutively unique
 - [unique-random-array](https://github.com/sindresorhus/unique-random-array) - Get consecutively unique elements from an array
 - [crypto-random-string](https://github.com/sindresorhus/crypto-random-string) - Generate a cryptographically strong random string
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

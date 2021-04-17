@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = (minimum, maximum) => {
+export default function randomInteger(minimum, maximum) {
 	if (maximum === undefined) {
 		maximum = minimum;
 		minimum = 0;
@@ -13,4 +11,4 @@ module.exports = (minimum, maximum) => {
 	return Math.floor(
 		(Math.random() * (maximum - minimum + 1)) + minimum
 	);
-};
+}

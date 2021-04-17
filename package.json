@@ -4,13 +4,16 @@
 	"description": "Generate a random integer",
 	"license": "MIT",
 	"repository": "sindresorhus/random-int",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=8"
+		"node": ">=12"
 	},
 	"scripts": {
 		"test": "xo && ava && tsd"
@@ -20,7 +23,6 @@
 		"index.d.ts"
 	],
 	"keywords": [
-		"rand",
 		"random",
 		"randomize",
 		"int",
@@ -33,10 +35,10 @@
 		"generator"
 	],
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"in-range": "^2.0.0",
-		"stable-fn": "^2.0.0",
-		"tsd": "^0.7.2",
-		"xo": "^0.24.0"
+		"ava": "^3.15.0",
+		"in-range": "^3.0.0",
+		"stable-fn": "^3.0.0",
+		"tsd": "^0.14.0",
+		"xo": "^0.38.2"
 	}
 }
