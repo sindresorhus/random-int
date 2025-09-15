@@ -1,6 +1,6 @@
 {
 	"name": "random-int",
-	"version": "3.0.0",
+	"version": "3.1.0",
 	"description": "Generate a random integer",
 	"license": "MIT",
 	"repository": "sindresorhus/random-int",
