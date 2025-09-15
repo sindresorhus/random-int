@@ -8,7 +8,10 @@ export default function randomInteger(minimum, maximum) {
 		throw new TypeError('Expected all arguments to be numbers');
 	}
 
+	const actualMinimum = Math.min(minimum, maximum);
+	const actualMaximum = Math.max(minimum, maximum);
+
 	return Math.floor(
-		(Math.random() * (maximum - minimum + 1)) + minimum
+		(Math.random() * (actualMaximum - actualMinimum + 1)) + actualMinimum
 	);
 }

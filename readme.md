@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install random-int
+```sh
+npm install random-int
 ```
 
 ## Usage
@@ -30,6 +30,8 @@ Returns an integer from `0` to `maximum`.
 
 Returns an integer from `minimum` to `maximum`.
 
+If `minimum` is greater than `maximum`, the values are swapped to return an integer from the lower value to the higher value.
+
 #### minimum
 
 Type: `number`\
@@ -48,8 +50,8 @@ Maximum integer to return.
 
 - [random-float](https://github.com/sindresorhus/random-float) - Generate a random float
 - [random-item](https://github.com/sindresorhus/random-item) - Get a random item from an array
-- [random-obj-key](https://github.com/sindresorhus/random-obj-key) - Get a random key from an object
-- [random-obj-prop](https://github.com/sindresorhus/random-obj-prop) - Get a random property from an object
+- [random-object-key](https://github.com/sindresorhus/random-object-key) - Get a random key from an object
+- [random-object-value](https://github.com/sindresorhus/random-object-value) - Get a random value from an object
 - [unique-random](https://github.com/sindresorhus/unique-random) - Generate random numbers that are consecutively unique
 - [unique-random-array](https://github.com/sindresorhus/unique-random-array) - Get consecutively unique elements from an array
 - [crypto-random-string](https://github.com/sindresorhus/crypto-random-string) - Generate a cryptographically strong random string
