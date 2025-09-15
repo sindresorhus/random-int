@@ -27,23 +27,23 @@ test('main', t => {
 test('handles swapped min/max arguments', t => {
 	// Test with positive numbers where min > max
 	const results = [];
-	for (let i = 0; i < 100; i++) {
+	for (let index = 0; index < 100; index++) {
 		results.push(randomInteger(10, 5));
 	}
 
 	t.true(results.every(n => n >= 5 && n <= 10));
 
 	// Test with negative numbers where min > max
-	const negResults = [];
-	for (let i = 0; i < 100; i++) {
-		negResults.push(randomInteger(-5, -10));
+	const negativeResults = [];
+	for (let index = 0; index < 100; index++) {
+		negativeResults.push(randomInteger(-5, -10));
 	}
 
-	t.true(negResults.every(n => n >= -10 && n <= -5));
+	t.true(negativeResults.every(n => n >= -10 && n <= -5));
 
 	// Test with mixed positive/negative where min > max
 	const mixedResults = [];
-	for (let i = 0; i < 100; i++) {
+	for (let index = 0; index < 100; index++) {
 		mixedResults.push(randomInteger(5, -5));
 	}
 
